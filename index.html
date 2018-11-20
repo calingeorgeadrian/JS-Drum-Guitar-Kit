@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Guitar & Drum Kit</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js" defer></script>
+</head>
+<body>
+	<div class="keys">
+		<div class="guitar-keys">
+			<h2 id="left-title">Guitar</h2>
+			<div class="left-keys">
+				<div data-key="49" class="key">
+					<span class="kbd">1</span>
+					<span class="sound">A2A3</span>
+				</div>
+				<div data-key="50" class="key">
+					<span class="kbd">2</span>
+					<span class="sound">A3</span>
+				</div>
+				<div data-key="51" class="key">
+					<span class="kbd">3</span>
+					<span class="sound">B2</span>
+				</div>
+				<div data-key="52" class="key">
+					<span class="kbd">4</span>
+					<span class="sound">B3</span>
+				</div>
+				<div data-key="81" class="key">
+					<span class="kbd">Q</span>
+					<span class="sound">B3B4</span>
+				</div>
+				<div data-key="87" class="key">
+					<span class="kbd">W</span>
+					<span class="sound">B4</span>
+				</div>
+				<div data-key="69" class="key">
+					<span class="kbd">E</span>
+					<span class="sound">C#3</span>
+				</div>
+				<div data-key="82" class="key">
+					<span class="kbd">R</span>
+					<span class="sound">C#3C#4</span>
+				</div>
+				<div data-key="65" class="key">
+					<span class="kbd">A</span>
+					<span class="sound">C#4</span>
+				</div>
+				<div data-key="83" class="key">
+					<span class="kbd">S</span>
+					<span class="sound">D#4</span>
+				</div>
+				<div data-key="68" class="key">
+					<span class="kbd">D</span>
+					<span class="sound">D3</span>
+				</div>
+				<div data-key="70" class="key">
+					<span class="kbd">F</span>
+					<span class="sound">D5</span>
+				</div>
+				<div data-key="90" class="key">
+					<span class="kbd">Z</span>
+					<span class="sound">E2</span>
+				</div>
+				<div data-key="88" class="key">
+					<span class="kbd">X</span>
+					<span class="sound">E4</span>
+				</div>
+				<div data-key="67" class="key">
+					<span class="kbd">C</span>
+					<span class="sound">F2</span>
+				</div>
+				<div data-key="86" class="key">
+					<span class="kbd">V</span>
+					<span class="sound">F2F3</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="drum-keys">
+			<h2 id="right-title">Drum</h2>
+			<div class="right-keys">
+				<div data-key="73" class="key">
+					<span class="kbd">I</span>
+					<span class="sound">clap</span>
+				</div>
+				<div data-key="79" class="key">
+					<span class="kbd">O</span>
+					<span class="sound">hihat</span>
+				</div>
+				<div data-key="80" class="key">
+					<span class="kbd">P</span>
+					<span class="sound">kick</span>
+				</div>
+				<div data-key="74" class="key">
+					<span class="kbd">J</span>
+					<span class="sound">openhat</span>
+				</div>
+				<div data-key="75" class="key">
+					<span class="kbd">K</span>
+					<span class="sound">boom</span>
+				</div>
+				<div data-key="76" class="key">
+					<span class="kbd">L</span>
+					<span class="sound">ride</span>
+				</div>
+				<div data-key="78" class="key">
+					<span class="kbd">N</span>
+					<span class="sound">snare</span>
+				</div>
+				<div data-key="77" class="key">
+					<span class="kbd">M</span>
+					<span class="sound">tom</span>
+				</div>
+				<div data-key="188" class="key">
+					<span class="kbd">,</span>
+					<span class="sound">tink</span>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+	<audio data-key="49" src="guitar-sounds/A2A3.wav"></audio>
+	<audio data-key="50" src="guitar-sounds/A3.wav"></audio>
+	<audio data-key="51" src="guitar-sounds/B2.wav"></audio>
+	<audio data-key="52" src="guitar-sounds/B3.wav"></audio>
+	<audio data-key="81" src="guitar-sounds/B3B4.wav"></audio>
+	<audio data-key="87" src="guitar-sounds/B4.wav"></audio>
+	<audio data-key="69" src="guitar-sounds/C3.wav"></audio>
+	<audio data-key="82" src="guitar-sounds/C3C4.wav"></audio>
+	<audio data-key="65" src="guitar-sounds/C4.wav"></audio>
+	<audio data-key="83" src="guitar-sounds/D4.wav"></audio>
+	<audio data-key="68" src="guitar-sounds/D3.wav"></audio>
+	<audio data-key="70" src="guitar-sounds/D5.wav"></audio>
+	<audio data-key="90" src="guitar-sounds/E2.wav"></audio>
+	<audio data-key="88" src="guitar-sounds/E4.wav"></audio>
+	<audio data-key="67" src="guitar-sounds/F2.wav"></audio>
+	<audio data-key="86" src="guitar-sounds/F2F3.wav"></audio>
+	  
+	<audio data-key="73" src="drum-sounds/clap.wav"></audio>
+	<audio data-key="79" src="drum-sounds/hihat.wav"></audio>
+	<audio data-key="80" src="drum-sounds/kick.wav"></audio>
+	<audio data-key="74" src="drum-sounds/openhat.wav"></audio>
+	<audio data-key="75" src="drum-sounds/boom.wav"></audio>
+	<audio data-key="76" src="drum-sounds/ride.wav"></audio>
+	<audio data-key="78" src="drum-sounds/snare.wav"></audio>
+	<audio data-key="77" src="drum-sounds/tom.wav"></audio>
+	<audio data-key="188" src="drum-sounds/tink.wav"></audio>
+</body>
+</html>

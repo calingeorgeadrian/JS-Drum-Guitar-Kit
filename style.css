@@ -1,0 +1,110 @@
+
+body {
+	background: url("background.jpg") no-repeat fixed center;
+	font-family: sans-serif;
+}
+
+h2 {
+	grid-area: title;
+	font-size: 2em;
+	color: white;
+    text-shadow: 3px 3px #000;
+	text-align: center;
+}
+
+.keys {
+	display: grid;
+	grid-template-areas: "guitar-keys drum-keys";
+	margin-top: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 10%;
+}
+
+.guitar-keys, .drum-keys {
+	display: grid;
+	min-width: 30%;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+}
+
+.guitar-keys {
+	display: grid;
+	grid-area: guitar-keys;
+	grid-template-areas:"title"
+						"left-keys";
+}
+
+#left-title {
+	grid-area: title;
+}
+
+.left-keys {
+	display: grid;
+	grid-area: left-keys;
+	grid-template-areas:"key key key key"
+						"key key key key"
+						"key key key key"
+						"key key key key";
+}
+
+.drum-keys {
+	display: grid;
+	grid-area: drum-keys;
+	grid-template-areas:"title"
+						"right-keys";
+}
+
+#right-title {
+	grid-area: title;
+}
+
+.right-keys {
+	display: grid;
+	grid-template-areas:"key key key"
+						"key key key"
+						"key key key";
+}
+
+.key {
+	border: 3px solid black;
+	border-radius: 5%;
+	margin: 4%;
+	font-size: 1em;
+	padding: 4% 2%;
+	transition: all .07s ease;
+	width: 5em;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	background: rgba(0, 0, 0,0.4);
+	text-shadow: 0 0 .2% black;
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: #ffc600;
+	box-shadow: 5px #ffc600;
+}
+
+.kbd {
+	display: block;
+	font-size: 3.2em;
+}
+
+.sound {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: #ffc600;
+}
+
+@media only screen and (max-width: 1200px) {
+	.keys {
+		grid-template-areas: "guitar-keys"
+							"drum-keys";
+		grid-row-gap: 10%;
+	}
+}
