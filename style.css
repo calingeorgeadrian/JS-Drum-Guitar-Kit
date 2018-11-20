@@ -108,3 +108,12 @@ h2 {
 		grid-row-gap: 10%;
 	}
 }
+@media only screen and (max-width: 600px) {
+	.key {
+		width: 3em;
+	}
+	
+	.kbd {
+		font-size: 1.6em;
+	}
+}
